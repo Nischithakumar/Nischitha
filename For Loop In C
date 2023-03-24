@@ -1,0 +1,19 @@
+#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+#include &lt;math.h&gt;
+#include &lt;stdlib.h&gt;
+
+int main() 
+{
+    int a, b;
+    scanf("%d\n%d", &amp;a, &amp;b);
+      // Complete the code.
+      char num_name[11][6]={"one","two","three","four","five","six","seven","eight","nine","even","odd"};
+    for(int i=a; i&lt;=b ;i++)
+    {
+        int num_i = i&lt;=9 ? i-1 : 9 + i % 2;
+        printf("%s \n",num_name[num_i]);
+    }
+
+    return 0;
+}
